@@ -25,6 +25,17 @@ main {
 	align-items: center;
 }
 
+#advice {
+
+}
+
+#dice {
+	background-color: hsl(150, 100%, 66%);
+	padding: 2% 3.5%;
+	border-radius: 100%;
+	margin-bottom: -6%;
+}
+
 /*Mobile Screen*/
 @media (max-width: 600px) {
 	
