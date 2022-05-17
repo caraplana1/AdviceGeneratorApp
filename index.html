@@ -7,7 +7,13 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 	
 	<title>Frontend Mentor | Advice generator app</title>
+
 	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
+
+	<script src="./script.js"></script>
 
 	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 	<style>
@@ -15,15 +21,19 @@
 		.attribution a { color: hsl(228, 45%, 44%); }
 	</style>
 </head>
-<body>
+<body onload="LoadAdvice()">
 
 	<main>
 		<div id="advice">
-			Advice #<!-- Advice ID goes here -->
+			<p id="adviceID" class="green">
 
-			"<!-- Advice text goes here -->"
+			</p>
+			<p id="adviceText">
+
+			</p>
 		</div>
-		<div id="dice">
+
+		<div id="dice" class="green">
 			<img src="./images/icon-dice.svg" alt="dice">
 		</div>
 	</main>
