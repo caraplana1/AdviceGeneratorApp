@@ -1,5 +1,5 @@
 function LoadAdvice(){
-	let id = document.getElementById("adviceId")
+	let id = document.getElementById("adviceID")
 	let text = document.getElementById("adviceText")
 
 	fetch("https://api.adviceslip.com/advice").then(response => {
@@ -8,8 +8,8 @@ function LoadAdvice(){
 		var data = advice.slip
 
 		console.log(data)
-		// id.innerText = data.slip_id
-		// text.innerText = data.advice
+		id.innerText = data.id
+		text.innerText = data.advice
 	}).catch(error => {
 		console.log(error)
 	})
