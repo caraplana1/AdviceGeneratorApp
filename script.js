@@ -1,17 +1,16 @@
-let id = document.getElementById("adviceId")
-let text = document.getElementById("adviceText")
+function LoadAdvice(){
+	let id = document.getElementById("adviceId")
+	let text = document.getElementById("adviceText")
 
-text.innerText = "Pene"
+	fetch("https://api.adviceslip.com/advice").then(response => {
+		return response.json()
+	}).then(advice => {
+		var data = advice.slip
 
-
-fetch("https://api.adviceslip.com/advice").then(response => {
-	return response.json()
-}).then(advice => {
-	var data = advice.slip
-
-	console.log(data)
-	// id.innerText = data.slip_id
-	// text.innerText = data.advice
-}).catch(error => {
-	console.log(error)
-})
+		console.log(data)
+		// id.innerText = data.slip_id
+		// text.innerText = data.advice
+	}).catch(error => {
+		console.log(error)
+	})
+}
