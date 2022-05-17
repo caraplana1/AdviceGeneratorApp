@@ -5,12 +5,11 @@ body {
 	text-align: center;
 
 	display: grid;
-	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-columns: 30% 40% 30%;
 	grid-template-rows: 90% 10%;
 }
 
 .attribution {
-	display: inline-block;
 	grid-row: 2;
 	grid-column: 2;
 }
@@ -20,6 +19,7 @@ main {
 	grid-column: 2;
 	margin: 25% 0%;
 	border-radius: .5rem;
+	padding: 10%;
 }
 
 #adviceID {
@@ -30,7 +30,13 @@ main {
 #adviceText {
 	color: hsl(193, 38%, 86%);
 	font-size: 28px;
-	margin: 0;
+	margin: 6% 0% 6% 0%;
+}
+
+#divider {
+	height: 16px;
+	background-position: center;
+	margin: 10% 0%;
 }
 
 #dice {
@@ -40,14 +46,14 @@ main {
 	padding: 4%;
 	border-radius: 100%;
 	position: relative;
-	left: 42.75%;
+	left: 43.25%;
+	margin-bottom: -19%;
 }
 
 /*Mobile Screen*/
 @media (max-width: 600px) {
 	#divider {
 		background-image: url("./images/pattern-divider-mobile.svg");
-		height: 16px;
 	}
 }
 
@@ -55,6 +61,5 @@ main {
 @media (min-width: 600px) {
 	#divider {
 		background-image: url("./images/pattern-divider-desktop.svg");
-		height: 16px;
 	}
 }
