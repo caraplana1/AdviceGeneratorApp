@@ -7,9 +7,8 @@ function LoadAdvice(){
 	}).then(advice => {
 		var data = advice.slip
 
-		console.log(data)
-		id.innerText = data.id
-		text.innerText = data.advice
+		id.innerText = "advice #" + data.id
+		text.innerText = '"' + data.advice + '"'
 	}).catch(error => {
 		console.log(error)
 	})

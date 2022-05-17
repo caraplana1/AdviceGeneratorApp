@@ -1,8 +1,8 @@
 body {
 	font-family: 'Manrope', sans-serif;
-	font-size: 28px;
 	height: 100%;
 	background-color: hsl(218, 23%, 16%);
+	text-align: center;
 
 	display: grid;
 	grid-template-columns: 25% auto 25%;
@@ -20,13 +20,17 @@ main {
 	grid-column: 2;
 	margin: 25% 0%;
 	border-radius: .5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
-#advice {
+#adviceID {
+	color: hsl(150, 100%, 66%);
+	margin: 0;
+}
 
+#adviceText {
+	color: hsl(193, 38%, 86%);
+	font-size: 28px;
+	margin: 0;
 }
 
 #dice {
