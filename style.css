@@ -38,5 +38,16 @@ main {
 
 /*Mobile Screen*/
 @media (max-width: 600px) {
-	
+	#divider {
+		background-image: url("./images/pattern-divider-mobile.svg");
+		height: 16px;
+	}
+}
+
+/*Desktop Screen*/
+@media (min-width: 600px) {
+	#divider {
+		background-image: url("./images/pattern-divider-desktop.svg");
+		height: 16px;
+	}
 }
