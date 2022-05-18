@@ -3,10 +3,6 @@ body {
 	height: 100%;
 	background-color: hsl(218, 23%, 16%);
 	text-align: center;
-
-	display: grid;
-	grid-template-columns: 30% 40% 30%;
-	grid-template-rows: 90% 10%;
 }
 
 .attribution {
@@ -17,7 +13,7 @@ body {
 main {
 	background-color: hsl(217, 19%, 24%);
 	grid-column: 2;
-	margin: 25% 0%;
+	margin: 35% 0%;
 	border-radius: .5rem;
 	padding: 10%;
 }
@@ -62,6 +58,10 @@ main {
 
 /*Mobile Screen*/
 @media (max-width: 600px) {
+	main {
+		margin: 20% 5%;
+	}
+
 	#divider {
 		background-image: url("./images/pattern-divider-mobile.svg");
 	}
@@ -69,6 +69,12 @@ main {
 
 /*Desktop Screen*/
 @media (min-width: 600px) {
+	body {
+		display: grid;
+		grid-template-columns: 30% 40% 30%;
+		grid-template-rows: 90% 10%;
+	}
+
 	#divider {
 		background-image: url("./images/pattern-divider-desktop.svg");
 	}
