@@ -1,16 +1,11 @@
 body {
 	font-family: 'Manrope', sans-serif;
-	font-size: 28px;
 	height: 100%;
 	background-color: hsl(218, 23%, 16%);
-
-	display: grid;
-	grid-template-columns: 25% auto 25%;
-	grid-template-rows: 90% 10%;
+	text-align: center;
 }
 
 .attribution {
-	display: inline-block;
 	grid-row: 2;
 	grid-column: 2;
 }
@@ -18,25 +13,70 @@ body {
 main {
 	background-color: hsl(217, 19%, 24%);
 	grid-column: 2;
-	margin: 25% 0%;
+	margin: 35% 0%;
 	border-radius: .5rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	padding: 10%;
+	box-shadow: 10px 10px 30px hsl(218, 22%, 18.5%);
 }
 
-#advice {
+#adviceID {
+	color: hsl(150, 100%, 66%);
+	margin: 0;
+}
 
+#adviceText {
+	color: hsl(193, 38%, 86%);
+	font-size: 28px;
+	margin: 6% 0% 6% 0%;
+}
+
+#divider {
+	height: 16px;
+	background-position: center;
+	margin: 10% 0%;
 }
 
 #dice {
 	background-color: hsl(150, 100%, 66%);
-	padding: 2% 3.5%;
+	width: min-content;
+	height: 24px;
+	padding: 4%;
 	border-radius: 100%;
-	margin-bottom: -6%;
+	position: relative;
+	left: 46%;
+	margin-left: -12px;
+	margin-bottom: -19%;
+}
+
+#dice:hover {
+	cursor: pointer;
+}
+
+#dice:active {
+	cursor: pointer;
+	box-shadow: 0px 0px 50px -5px hsl(150, 100%, 66%);
 }
 
 /*Mobile Screen*/
 @media (max-width: 600px) {
-	
+	main {
+		margin: 20% 5%;
+	}
+
+	#divider {
+		background-image: url("./images/pattern-divider-mobile.svg");
+	}
+}
+
+/*Desktop Screen*/
+@media (min-width: 600px) {
+	body {
+		display: grid;
+		grid-template-columns: 30% 40% 30%;
+		grid-template-rows: 90% 10%;
+	}
+
+	#divider {
+		background-image: url("./images/pattern-divider-desktop.svg");
+	}
 }
